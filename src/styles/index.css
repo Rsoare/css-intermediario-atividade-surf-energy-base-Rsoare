@@ -8,8 +8,22 @@ h4 {
 }
 
 .home-header {
-  padding: 200px 0;
   background-image: url(./../images/bg.jpg);
+  padding-top: 200px;
+  position: relative;
+  height: 700px;
+}
+
+.home-header>figure {
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  z-index: 1;
+}
+
+.home-header>figure>img {
+  width: 100%;
+
 }
 
 .home-header-content {
@@ -27,7 +41,10 @@ h4 {
 .home-header .button {
   margin-left: auto;
   margin-right: 80px;
+  position: sticky;
+  top: 0px;
 }
+
 .participants {
   padding: 50px 0;
 }
